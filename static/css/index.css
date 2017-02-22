@@ -1,13 +1,9 @@
 /* styles for index page */
 
-.containercolor {
-	background: #2e3238;
-  	background: -webkit-linear-gradient(left top,#2e3238,teal);
-  	background: -o-linear-gradient(bottom right,#2e3238,teal);
-  	background: -moz-linear-gradient(bottom right,#2e3238,teal);
-	background: linear-gradient(to bottom right,#2e3238,teal);
-	width: 100%;
+#list{
+	text-align: left;
 }
+
 @media (min-width: 600px) {
 	#titlesection {
 		width: 700px;
@@ -27,6 +23,15 @@
 .row {
 	text-align: center;
 	margin-top: 20px;
+}
+
+.containercolor {
+	background: #2e3238;
+  	background: -webkit-linear-gradient(left top,#2e3238,teal);
+  	background: -o-linear-gradient(bottom right,#2e3238,teal);
+  	background: -moz-linear-gradient(bottom right,#2e3238,teal);
+	background: linear-gradient(to bottom right,#2e3238,teal);
+	width: 100%;
 }
 
 @media (min-width: 600px) {
