@@ -1,0 +1,56 @@
+/* styles for index page */
+
+.containercolor {
+	background: #2e3238;
+  	background: -webkit-linear-gradient(left top,#2e3238,teal);
+  	background: -o-linear-gradient(bottom right,#2e3238,teal);
+  	background: -moz-linear-gradient(bottom right,#2e3238,teal);
+	background: linear-gradient(to bottom right,#2e3238,teal);
+	width: 100%;
+}
+@media (min-width: 600px) {
+	#titlesection {
+		width: 700px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+/* styles for contact-us page */
+#aboutus{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.row {
+	text-align: center;
+	margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+	#aboutusheader{
+		width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+@media (min-width: 700px) {
+	
+}
+
+/* styles for all pages */
+
+.masthead {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.footer {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+}
