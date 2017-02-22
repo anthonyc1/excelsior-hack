@@ -36,13 +36,14 @@
 		margin-left: auto;
 	}
 
-	#mc_embed_signup{
-  	width:60%;}
-
 }
 
-@media (min-width: 700px) {
-	
+@media (min-width: 1000px) {
+	#mc_embed_signup{
+  		width:60%;
+  		margin-right: auto;
+		margin-left: auto;
+  	}
 }
 
 
