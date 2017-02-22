@@ -36,11 +36,15 @@
 		margin-left: auto;
 	}
 
+	#mc_embed_signup{
+  	width:60%;}
+
 }
 
 @media (min-width: 700px) {
 	
 }
+
 
 /* styles for all pages */
 
