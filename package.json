@@ -1,0 +1,8 @@
+{
+     "name": "nys-excelsior",
+     "version": "1.0.0",
+     "description": "An informational website about the Excelsior Scholarship initiative.",
+     "dependencies": {
+       "harp": "*"
+     }
+   }
