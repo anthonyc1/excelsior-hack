@@ -42,38 +42,6 @@
 	
 }
 
-/* styles for subscribe page */
-#mc_embed_signup{
-  	background:2e3238; 
-  	clear:left; 
-  	font-size: 14px;
-  	font-family:  Helvetica,Arial,sans-serif; 
-  	width:100%;}
-
-.asterisk{
-	color:red;
-}
-.mc-field-group{
-	text-align: center;
-}
-#mce-EMAIL,#mce-FNAME,#mce-LNAME{
-	color:black;
-}
-.button{
-	color:gray;
-}
-tab{
-	padding-left: 2em;
-}
-tab2{
-	padding-left: 4em;
-}
-tab3{
-	padding-left: 6em;
-}
-
-
-
 /* styles for all pages */
 
 .masthead {
