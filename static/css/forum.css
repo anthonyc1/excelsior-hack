@@ -1,8 +1,5 @@
 /* styles for forum page */
-.media {
-	text-align: left;
-	color: black;
-}
+
 #commentForm{
 	margin-right: auto;
 	margin-left: auto;
@@ -30,7 +27,12 @@
 	width: 75vw;
 	left: 10vw;
 	position: relative;
+}
 
+.media-list .media .well .media-comment {
+		text-align: left;
+	color: black;
+}
 
 @media (min-width: 600px) {
 	#addTitle{
@@ -39,6 +41,5 @@
 
 	#addComment{
 	max-width:90%;
-}
-
+	}
 }
