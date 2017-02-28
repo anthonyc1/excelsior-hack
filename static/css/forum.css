@@ -3,3 +3,13 @@
 	margin-right: 0px;
 	margin-left: 0px;
 }
+.well-sm{
+	width: 80vw;
+	left: 5vw;
+	position: relative;
+}
+.well-sm-indent{
+	width: 75vw;
+	left: 10vw;
+	position: relative;
+}

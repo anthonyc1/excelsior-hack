@@ -62,42 +62,55 @@
 
 				</div>
 			</div>
-										<form action="#" method="post" class="form-horizontal" id="commentForm" role="form"> 
-												<div class="form-group">
-														<label class="col-sm-2 control-label">Title</label>
-														<div class="col-sm-10">
-															<textarea class="form-control" name="addTitle" id="addTitle" rows="1"></textarea>
-														</div>
-														<label class="col-sm-2 control-label">Post</label>
-														<div class="col-sm-10">
-															<textarea class="form-control" name="addComment" id="addComment" rows="5"></textarea>
-														</div>
-												</div>
-												<div class="form-group">
-														<div class="col-sm-offset-2 col-sm-10">                    
-																<button class="btn btn-success btn-circle text-uppercase" type="submit"><span class="glyphicon glyphicon-send"></span> Submit post</button>
-														</div>
-												</div>            
-										</form>
-														{% if comments %}
-													{% for comment in comments %}
-												<li class="media">
-													<div >
-														<div class="well well-sm">
-																<h4 class="media-heading reviews text-primary"><span class="glyphicon glyphicon-user"></span> {{comment[1]}} </h4>
-
-
-																<p class="media-comment">
-																	{{comment[2]}}
-																</p>
-														</div>              
-													</div>
-												</li>
-												{% endfor %}
-											{% else %}
-											<h3>No comments yet. Leave your own and start the discussion!</h3><br><br>
-											{% endif %}
-										</ul> 
+			<form action="#" method="post" class="form-horizontal" id="commentForm" role="form"> 
+					<div class="form-group">
+							<label class="col-sm-2 control-label">Title</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" name="addTitle" id="addTitle" rows="1"></textarea>
+							</div>
+							<label class="col-sm-2 control-label">Post</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" name="addComment" id="addComment" rows="5"></textarea>
+							</div>
+					</div>
+					<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">                    
+									<button class="btn btn-success btn-circle text-uppercase" type="submit"><span class="glyphicon glyphicon-send"></span> Submit post</button>
+							</div>
+					</div>            
+			</form>
+			
+			{% if comments %}
+				<ul class="media-list">
+				{% for comment in comments %}
+					<li class="media">
+						<div class="well well-sm">
+								<h4 class="media-heading reviews text-primary">
+									<span class="glyphicon glyphicon-user"></span> {{comment[1]}} 
+								</h4>
+								<p class="media-comment">
+									{{comment[2]}} 
+								</p>
+						</div>
+					</li>
+					{% for reply in replies %}
+						<li class="media">
+							<div class="well well-sm-indent">
+									<h4 class="media-heading reviews text-primary">
+										<span class="glyphicon glyphicon-user"></span> {{reply[1]}} 
+									</h4>
+									<p class="media-comment">
+										{{reply[2]}} 
+									</p>
+							</div>
+						</li>
+					{% endfor %}
+				{% endfor %}
+				</ul>
+			{% else %}
+				<h3>No comments yet. Leave your own and start the discussion!</h3><br><br>
+			{% endif %}
+										 
 			<hr>
 
 			<!-- FOOTER -->

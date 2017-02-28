@@ -51,11 +51,13 @@ def forum():
 
 	if request.method == 'GET':
 		posts = database.getPosts()
-		print posts
-		return render_template("forum.html",comments=posts)
+		replies = database.getComments()
+		print replies
+		return render_template("forum.html",comments=posts,replies=replies)
 	else:
 		database.insertPost(request.form['addTitle'],request.form['addComment'])
-		return render_template("forum.html",comments=database.getPosts())
+
+		return render_template("forum.html",comments=database.getPosts(),replies=replies)
 
 
 
