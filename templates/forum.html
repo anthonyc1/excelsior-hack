@@ -95,16 +95,15 @@
 						</div>
 					</li>
 					{% for reply in replies %}
+						{% if reply[1] == comment[0] %}
 						<li class="media">
 							<div class="well well-sm-indent">
-									<h4 class="media-heading reviews text-primary">
-										<span class="glyphicon glyphicon-user"></span> {{reply[1]}} 
-									</h4>
 									<p class="media-comment">
 										{{reply[2]}} 
 									</p>
 							</div>
 						</li>
+						{% endif %}
 					{% endfor %}
 				{% endfor %}
 				</ul>
