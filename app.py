@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 
+#Website created by Anthony Chan
+#anthonychan0123@gmail.com
+
 #Website created by Shaan Sheikh
 #shaansweb.com | shaansweb@gmail.com
+
 import os
 from datetime import datetime
 import flask
