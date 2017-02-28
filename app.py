@@ -18,7 +18,7 @@ app.secret_key = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 
 
 @app.route('/')
-@app.route('/home')
+@app.route('/index')
 def index():
 	return render_template("index.html")
 
@@ -26,9 +26,25 @@ def index():
 def learnmore():
 	return render_template("learnmore.html")
 
+@app.route('/contact')
+def contact():
+	return render_template("contact.html")
+
+@app.route('/mentorship')
+def mentorship():
+	return render_template("mentorship.html")
+
 @app.route('/collegevalue')
-def cllegevalue():
+def collegevalue():
 	return render_template("collegevalue.html")
+
+@app.route('/elgibility')
+def elgibility():
+	return render_template("elgibility.html")
+
+@app.route('/sunycuny')
+def sunycuny():
+	return render_template("sunycuny.html")
 
 @app.route('/forum', methods=['GET', 'POST'])
 def forum():
