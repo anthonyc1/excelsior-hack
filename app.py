@@ -38,7 +38,7 @@ def forum():
 		print posts
 		return render_template("forum.html",comments=posts)
 	else:
-		print request.form 
+		database.insertPost(request.form['addTitle'],request.form['addComment'])
 		return render_template("forum.html",comments=database.getPosts())
 
 

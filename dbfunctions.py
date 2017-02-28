@@ -15,9 +15,8 @@ class AuthDatabase(Database):
         return self._execute('SELECT * FROM Posts')
 
 
-    def insertPost(self):
-        pass
-        #self._execute('INSERT INTO ')
+    def insertPost(self,title,post):
+        self._execute('INSERT INTO Posts(postTitle, post) VALUES (?,?);',(title,post))
 
     #########################################
 
