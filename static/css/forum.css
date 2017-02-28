@@ -1,8 +1,26 @@
+/* styles for forum page */
+.media {
+	text-align: left;
+	color: black;
+}
+#commentForm{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#addTitle{
+	max-width:70%;
+}
+
+#addComment{
+	max-width:70%;
+}
 
 .form-horizontal .form-group {
 	margin-right: 0px;
 	margin-left: 0px;
 }
+
 .well-sm{
 	width: 80vw;
 	left: 5vw;
@@ -12,4 +30,15 @@
 	width: 75vw;
 	left: 10vw;
 	position: relative;
+
+
+@media (min-width: 600px) {
+	#addTitle{
+	max-width:90%;
+	}
+
+	#addComment{
+	max-width:90%;
+}
+
 }

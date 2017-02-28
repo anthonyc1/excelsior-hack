@@ -13,24 +13,6 @@
 	}
 }
 
-/* styles for forum page */
-#media {
-	text-align: left;
-	color: black;
-}
-#commentForm{
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#addTitle{
-	max-width:70%;
-}
-
-#addComment{
-	max-width:70%;
-}
-
 /* styles for contact-us page */
 #aboutus{
 	margin-right: auto;
@@ -58,13 +40,6 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-	#addTitle{
-	max-width:90%;
-	}
-
-	#addComment{
-	max-width:90%;
-}
 
 }
 
