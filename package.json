@@ -1,8 +1,0 @@
-{
-     "name": "nys-excelsior",
-     "version": "1.0.0",
-     "description": "Website made by two SUNY students to showcase the NYS Excelsior Scholarship initiative.",
-     "dependencies": {
-       "harp": "*"
-     }
-   }
